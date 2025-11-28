@@ -30,3 +30,255 @@ Happy modeling!
 [0m14:58:44.796549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F0A3D290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0F1B217D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0E9FD1610>]}
 [0m14:58:44.797548 [debug] [MainThread]: Flushing usage events
 [0m14:58:46.444283 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:31.136777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF4EA17E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF52093B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF51E3F650>]}
+
+
+============================== 15:08:31.140777 | d1c69cb8-1f98-4bea-8500-24dc430d75f5 ==============================
+[0m15:08:31.140777 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m15:08:31.141779 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'profiles_dir': 'E:\\1.Workspace\\3.PROJECTS\\TAXI_ANALYSIS', 'write_json': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m15:08:31.173791 [info ] [MainThread]: dbt version: 1.11.0-rc1
+[0m15:08:31.174788 [info ] [MainThread]: python version: 3.11.8
+[0m15:08:31.174788 [info ] [MainThread]: python path: E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Scripts\python.exe
+[0m15:08:31.175901 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m15:08:31.566262 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:08:31.566262 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:08:31.567264 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:08:31.628578 [info ] [MainThread]: Using profiles dir at E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS
+[0m15:08:31.629825 [info ] [MainThread]: Using profiles.yml file at E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\profiles.yml
+[0m15:08:31.630831 [info ] [MainThread]: Using dbt_project.yml file at E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\dbt_project.yml
+[0m15:08:31.632318 [info ] [MainThread]: adapter type: snowflake
+[0m15:08:31.632318 [info ] [MainThread]: adapter version: 1.10.3
+[0m15:08:31.633319 [info ] [MainThread]: Configuration:
+[0m15:08:31.633319 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:08:31.634319 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:08:31.635319 [info ] [MainThread]: Required dependencies:
+[0m15:08:31.636333 [debug] [MainThread]: Executing "git --help"
+[0m15:08:32.399208 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:08:32.400211 [debug] [MainThread]: STDERR: "b''"
+[0m15:08:32.401209 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:08:32.402222 [info ] [MainThread]: Connection:
+[0m15:08:32.403220 [info ] [MainThread]:   account: MXYSHJD-KU69407
+[0m15:08:32.404208 [info ] [MainThread]:   user: CPTRIPATHI
+[0m15:08:32.405209 [info ] [MainThread]:   database: Taxi_db
+[0m15:08:32.406211 [info ] [MainThread]:   warehouse: dbt_wh
+[0m15:08:32.407212 [info ] [MainThread]:   role: dbt_role
+[0m15:08:32.408212 [info ] [MainThread]:   schema: yellow_vs_uber
+[0m15:08:32.409210 [info ] [MainThread]:   authenticator: None
+[0m15:08:32.410209 [info ] [MainThread]:   oauth_client_id: None
+[0m15:08:32.411209 [info ] [MainThread]:   query_tag: None
+[0m15:08:32.411209 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:08:32.412214 [info ] [MainThread]:   host: None
+[0m15:08:32.413209 [info ] [MainThread]:   port: None
+[0m15:08:32.413209 [info ] [MainThread]:   proxy_host: None
+[0m15:08:32.414212 [info ] [MainThread]:   proxy_port: None
+[0m15:08:32.415211 [info ] [MainThread]:   protocol: None
+[0m15:08:32.415211 [info ] [MainThread]:   connect_retries: 1
+[0m15:08:32.416210 [info ] [MainThread]:   connect_timeout: None
+[0m15:08:32.417213 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:08:32.418211 [info ] [MainThread]:   retry_all: False
+[0m15:08:32.419209 [info ] [MainThread]:   insecure_mode: False
+[0m15:08:32.420212 [info ] [MainThread]:   reuse_connections: True
+[0m15:08:32.421210 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m15:08:32.421210 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m15:08:32.422212 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:08:32.791440 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:08:35.683772 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:08:35.683772 [debug] [MainThread]: On debug: select 1 as id
+[0m15:08:35.684771 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:08:35.688771 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m15:08:35.688771 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m15:08:35.689772 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:08:35.689772 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:08:35.690772 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\dbt_project.yml> not found
+
+[0m15:08:35.691771 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  251006: Password is empty
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:08:35.692771 [debug] [MainThread]: Command `dbt debug` failed at 15:08:35.692771 after 4.64 seconds
+[0m15:08:35.692771 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:08:35.693772 [debug] [MainThread]: On debug: No close available on handle
+[0m15:08:35.693772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF5209D290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF545D42D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF511EAAD0>]}
+[0m15:08:35.694771 [debug] [MainThread]: Flushing usage events
+[0m15:08:37.309228 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:10:49.649211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F22C085050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F22BE2F690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F22C0EB8D0>]}
+
+
+============================== 15:10:49.653212 | fee19bd0-0f68-46ab-8db4-32a67c991b50 ==============================
+[0m15:10:49.653212 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m15:10:49.654212 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'write_json': 'True', 'profiles_dir': 'C:\\Users\\tripa\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'printer_width': '80', 'target_path': 'None'}
+[0m15:10:49.673215 [info ] [MainThread]: dbt version: 1.11.0-rc1
+[0m15:10:49.674216 [info ] [MainThread]: python version: 3.11.8
+[0m15:10:49.675219 [info ] [MainThread]: python path: E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Scripts\python.exe
+[0m15:10:49.676216 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m15:10:50.148310 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:10:50.148310 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:10:50.149308 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:10:50.211767 [info ] [MainThread]: Using profiles dir at C:\Users\tripa\.dbt
+[0m15:10:50.212275 [info ] [MainThread]: Using profiles.yml file at C:\Users\tripa\.dbt\profiles.yml
+[0m15:10:50.213281 [info ] [MainThread]: Using dbt_project.yml file at E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\dbt_project.yml
+[0m15:10:50.214281 [info ] [MainThread]: adapter type: snowflake
+[0m15:10:50.214281 [info ] [MainThread]: adapter version: 1.10.3
+[0m15:10:50.215289 [info ] [MainThread]: Configuration:
+[0m15:10:50.216284 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:10:50.216284 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:10:50.217287 [info ] [MainThread]: Required dependencies:
+[0m15:10:50.218285 [debug] [MainThread]: Executing "git --help"
+[0m15:10:50.264282 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:10:50.265309 [debug] [MainThread]: STDERR: "b''"
+[0m15:10:50.266319 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:10:50.267316 [info ] [MainThread]: Connection:
+[0m15:10:50.268317 [info ] [MainThread]:   account: https://nb94068.us-east-2.aws.snowflakecomputing.com
+[0m15:10:50.269314 [info ] [MainThread]:   user: CPTRIPATHI
+[0m15:10:50.270317 [info ] [MainThread]:   database: Taxi_db
+[0m15:10:50.271318 [info ] [MainThread]:   warehouse: dbt_wh
+[0m15:10:50.272315 [info ] [MainThread]:   role: dbt_role
+[0m15:10:50.273315 [info ] [MainThread]:   schema: yellow_vs_uber
+[0m15:10:50.274321 [info ] [MainThread]:   authenticator: None
+[0m15:10:50.275314 [info ] [MainThread]:   oauth_client_id: None
+[0m15:10:50.276316 [info ] [MainThread]:   query_tag: None
+[0m15:10:50.276316 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:10:50.277319 [info ] [MainThread]:   host: None
+[0m15:10:50.278337 [info ] [MainThread]:   port: None
+[0m15:10:50.278337 [info ] [MainThread]:   proxy_host: None
+[0m15:10:50.279316 [info ] [MainThread]:   proxy_port: None
+[0m15:10:50.279316 [info ] [MainThread]:   protocol: None
+[0m15:10:50.280822 [info ] [MainThread]:   connect_retries: 1
+[0m15:10:50.281829 [info ] [MainThread]:   connect_timeout: None
+[0m15:10:50.282829 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:10:50.283830 [info ] [MainThread]:   retry_all: False
+[0m15:10:50.284833 [info ] [MainThread]:   insecure_mode: False
+[0m15:10:50.285832 [info ] [MainThread]:   reuse_connections: True
+[0m15:10:50.286830 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m15:10:50.287830 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m15:10:50.288831 [info ] [MainThread]: Registered adapter: snowflake=1.10.3
+[0m15:10:50.645370 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:10:50.855651 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:10:50.855651 [debug] [MainThread]: On debug: select 1 as id
+[0m15:10:50.856649 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:11:05.980112 [error] [MainThread]: Encountered an error:
+
+[0m15:11:05.988104 [error] [MainThread]: Traceback (most recent call last):
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\cli\main.py", line 420, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\task\debug.py", line 144, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\task\debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\task\debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\impl.py", line 440, in debug_query
+    self.execute("select 1 as id")
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\base\impl.py", line 461, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 536, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 573, in add_query
+    connection, cursor = self._add_standard_queries(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 632, in _add_standard_queries
+    connection, cursor = self.add_standard_query(query, **kwargs)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 547, in add_standard_query
+    return super().add_query(self._add_query_comment(sql), **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\sql\connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+             ^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\contracts\connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 442, in open
+    return cls.retry_connection(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\base\connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 401, in connect
+    handle = snowflake.connector.connect(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\__init__.py", line 66, in Connect
+    return SnowflakeConnection(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\connection.py", line 588, in __init__
+    self.connect(**kwargs)
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\connection.py", line 972, in connect
+    self.__open_connection()
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\connection.py", line 1371, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\connection.py", line 1704, in authenticate_with_retry
+    self._authenticate(auth_instance)
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\connection.py", line 1736, in _authenticate
+    auth.authenticate(
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\auth\_auth.py", line 238, in authenticate
+    ret = self._rest._post_request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\network.py", line 728, in _post_request
+    ret = self.fetch(
+          ^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\network.py", line 847, in fetch
+    ret = self._request_exec_wrapper(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\network.py", line 898, in _request_exec_wrapper
+    return_object = self._request_exec(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\network.py", line 1083, in _request_exec
+    raw_ret = session.request(
+              ^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 762, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\1.Workspace\3.PROJECTS\TAXI_ANALYSIS\venv\Lib\site-packages\snowflake\connector\vendored\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+
+[0m15:11:05.992065 [debug] [MainThread]: Command `dbt debug` failed at 15:11:05.991063 after 16.42 seconds
+[0m15:11:05.992065 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:11:05.993066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F22C08D110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F22C0EB150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F22C083110>]}
+[0m15:11:05.994065 [debug] [MainThread]: Flushing usage events
+[0m15:11:07.519122 [debug] [MainThread]: An error was encountered while trying to flush usage events

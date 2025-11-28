@@ -1,0 +1,16 @@
+taxi_data:
+  outputs:
+    dev:
+      type: snowflake
+      account: MXYSHJD-KU69407
+      user: CPTRIPATHI
+      password: 'Haryana@@7@@spn'
+
+      role: dbt_role
+      
+
+      database: Taxi_db
+      schema: yellow_vs_uber
+      threads: 1
+      warehouse: dbt_wh
+  target: dev

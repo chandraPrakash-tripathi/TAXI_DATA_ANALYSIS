@@ -1,0 +1,4 @@
+streamlit
+fastapi
+dbt-snowflake
+dbt-core
