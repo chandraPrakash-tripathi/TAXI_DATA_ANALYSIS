@@ -9,7 +9,7 @@ taxi_data:
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       
       database: Taxi_db
-      schema: RAW
+      schema: DEV
       threads: 4
       warehouse: dbt_wh
   target: dev

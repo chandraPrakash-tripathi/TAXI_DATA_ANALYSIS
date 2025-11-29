@@ -31,8 +31,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   taxi_data:
-    # Config indicated by + and applies to all files under models/example/
-      +materialized: view
+  
 
       stg:
         +schema: STG
@@ -40,4 +39,4 @@ models:
 
       mart:
         +schema: MART
-        +materialized: table
+        +materialized: view

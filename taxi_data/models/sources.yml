@@ -1,31 +1,24 @@
 version: 2
 
 sources:
-  - name: taxi_raw
-    database: TAXI_DB
-    schema: RAW
-    description: "External/raw stage tables registered in Snowflake (yellow, fhvhv, taxi zones)."
+  - name: taxi_raw              # source name used inside dbt
+    database: TAXI_DB           # Snowflake database
+    schema: RAW                 # Snowflake schema
     tables:
-      - name: high_volume_jan
-        identifier: FHVHV_TRIPDATA_EXT_JAN
-        description: "FHVHV external table - January"
-      - name: high_volume_feb
+      - name: fhvhv_tripdata_ext_jan
+        identifier: FHVHV_TRIPDATA_EXT_JAN   # actual table name in Snowflake
+
+      - name: fhvhv_tripdata_ext_feb
         identifier: FHVHV_TRIPDATA_EXT_FEB
-        description: "FHVHV external table - February"
-      - name: high volume_mar
+
+      - name: fhvhv_tripdata_ext_mar
         identifier: FHVHV_TRIPDATA_EXT_MAR
-        description: "FHVHV external table - March"
 
-      - name: yellow_trip_jan
-        identifer: YELLOW_TRIPDATA_EXT_JAN
-        description: "Yellow taxi external table - January"
-      - name: yellow_trip_feb
-        identifer: YELLOW_TRIPDATA_EXT_FEB
-        description: "Yellow taxi external table - February"
-      - name: yellow_trip_mar
-        idetnifer: YELLOW_TRIPDATA_EXT_MAR
-        description: "Yellow taxi external table - March"
+      - name: yellow_tripdata_ext_jan
+        identifier: YELLOW_TRIPDATA_EXT_JAN
 
-      - name: taxi_lookup
-        identifer: TAXI_ZONE_LOOKUP
-        description: "Taxi zone lookup table (zones, boroughs, etc.)"
+      - name: yellow_tripdata_ext_feb
+        identifier: YELLOW_TRIPDATA_EXT_FEB
+
+      - name: yellow_tripdata_ext_mar
+        identifier: YELLOW_TRIPDATA_EXT_MAR
