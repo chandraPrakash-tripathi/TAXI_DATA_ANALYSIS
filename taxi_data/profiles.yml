@@ -4,11 +4,10 @@ taxi_data:
       type: snowflake
       account: MXYSHJD-KU69407
       user: CPTRIPATHI
-      password: 'Haryana@@7@@spn'
 
       role: dbt_role
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       
-
       database: Taxi_db
       schema: yellow_vs_uber
       threads: 1

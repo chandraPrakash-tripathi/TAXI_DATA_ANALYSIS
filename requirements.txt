@@ -2,3 +2,5 @@ streamlit
 fastapi
 dbt-snowflake
 dbt-core
+astronomer-cosmos
+apache-airflow-providers-snowflake
