@@ -33,3 +33,11 @@ models:
   taxi_data:
     # Config indicated by + and applies to all files under models/example/
       +materialized: view
+
+      stg:
+        +schema: STG
+        +materialized: view
+
+      mart:
+        +schema: MART
+        +materialized: table
